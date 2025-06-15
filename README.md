@@ -1,18 +1,18 @@
 ```markdown
-# 🛡️ DevSecOps Lab - Fullstack Infra Automation with Ansible + Vagrant + K3s
+# 🛠️ DevSecOps Lab
 
-![Ansible](https://img.shields.io/badge/automation-ansible-%E2353E?logo=ansible)
-![K3s](https://img.shields.io/badge/kubernetes-K3s-326CE5?logo=kubernetes)
+![Ansible](https://img.shields.io/badge/automation-ansible-%23EE0000?logo=ansible&logoColor=white)
+![K3s](https://img.shields.io/badge/kubernetes-K3s-blue?logo=kubernetes)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-A fully automated, multi-VM DevSecOps lab powered by **Vagrant**, **Ansible**, and **K3s**. It provisions a secure and modular infrastructure stack with:
+A fully automated, multi-VM **DevSecOps Lab** powered by **Vagrant**, **Ansible**, and **K3s**. It includes:
 
-- 🔧 LAMP-based WordPress app
+- 📦 LAMP-based WordPress app
 - ☕ Java app server (Tomcat)
 - 📊 Monitoring stack (Prometheus + Grafana)
-- 🔁 CI/CD node for future automation
-- 🧯 Optional hardening using **Lynis**, **UFW**, and security best practices
+- 🚀 CI/CD node for future automation
+
 
 ---
 
