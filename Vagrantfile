@@ -2,10 +2,10 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"
 
   nodes = {
-    "monitoring-vm" => "192.168.56.10",
-    "lamp-vm"       => "192.168.56.11",
-    "java-app-vm"   => "192.168.56.12",
-    "ci-cd-vm"      => "192.168.56.13"
+    "monitoring-vm" => "your-ip",
+    "lamp-vm"       => "our-ip"",
+    "java-app-vm"   => "our-ip"",
+    "ci-cd-vm"      => "our-ip""
   }
 
   nodes.each do |name, ip|
