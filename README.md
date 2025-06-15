@@ -1,10 +1,11 @@
 ```markdown
 # 🛠️ DevSecOps Lab
 
-![Ansible](https://img.shields.io/badge/automation-ansible-%23EE0000?logo=ansible&logoColor=white)
-![K3s](https://img.shields.io/badge/kubernetes-K3s-blue?logo=kubernetes)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
+![Static Badge](https://img.shields.io/badge/!%5BAnsible%5D(https%3A%2F%2Fimg.shields.io%2Fbadge%2Fautomation-ansible-%2523EE0000%3Flogo%3Dansible%26logoColor%3Dwhite))
+![Static Badge](https://img.shields.io/badge/!%5BK3s%5D(https%3A%2F%2Fimg.shields.io%2Fbadge%2Fkubernetes-K3s-blue%3Flogo%3Dkubernetes))
+![Static Badge](https://img.shields.io/badge/!%5BStatus%5D(https%3A%2F%2Fimg.shields.io%2Fbadge%2Fstatus-active-brightgreen))
+![Static Badge](https://img.shields.io/badge/%20%20%20!%5BLicense%5D(https%3A%2F%2Fimg.shields.io%2Fbadge%2Flicense-MIT-blue))
+
 
 A fully automated, multi-VM **DevSecOps Lab** powered by **Vagrant**, **Ansible**, and **K3s**. It includes:
 
