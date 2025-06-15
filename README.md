@@ -1,15 +1,3 @@
-Awesome — let's make a **professional `README.md`** for your `devsecops-lab` project that:
-
-✅ Explains what the project does
-✅ Shows off the tech stack
-✅ Documents how to use it (quick start)
-✅ Adds badges, screenshots (optional), and structure
-✅ Mentions CI/CD + hardening if included
-
----
-
-### 📄 `README.md` (DevSecOps Lab)
-
 ```markdown
 # 🛡️ DevSecOps Lab - Fullstack Infra Automation with Ansible + Vagrant + K3s
 
