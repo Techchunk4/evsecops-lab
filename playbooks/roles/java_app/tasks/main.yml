@@ -1,0 +1,28 @@
+---
+- name: Install Java and Tomcat
+  apt:
+    name:
+      - default-jdk
+      - tomcat9
+    state: present
+  become: true
+
+- name: Ensure Tomcat is started and enabled
+  service:
+    name: tomcat9
+    state: started
+    enabled: yes
+
+- name: Copy sample.war to Tomcat webapps
+  copy:
+    src: sample.war
+    dest: /var/lib/tomcat9/webapps/sample.war
+    owner: tomcat
+    group: tomcat
+    mode: '0644'
+  notify: Restart Tomcat
+
+- name: Wait for app to deploy
+  wait_for:
+    path: /var/lib/tomcat9/webapps/sample
+    timeout: 30

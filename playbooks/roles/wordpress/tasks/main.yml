@@ -1,0 +1,32 @@
+- name: Install required packages
+  apt:
+    name:
+      - apache2
+      - php
+      - php-mysql
+      - libapache2-mod-php
+      - mysql-client
+      - wget
+      - unzip  # ✅ Required for .zip
+    state: present
+  become: true
+
+- name: Download WordPress using wget
+  ansible.builtin.command:
+    cmd: wget https://wordpress.org/latest.zip -O /tmp/wordpress.zip --no-check-certificate
+  become: true
+
+- name: Unzip WordPress
+  unarchive:
+    src: /tmp/wordpress.zip
+    dest: /var/www/html/
+    remote_src: yes
+  become: true
+
+- name: Set permissions
+  file:
+    path: /var/www/html/wordpress
+    owner: www-data
+    group: www-data
+    recurse: yes
+  become: true

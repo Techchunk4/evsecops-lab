@@ -1,0 +1,18 @@
+- name: Install OpenVAS on monitoring-vm
+  hosts: monitoring
+  become: true
+  tasks:
+    - name: Install dependencies
+      apt:
+        name:
+          - software-properties-common
+          - openvas
+        update_cache: yes
+
+    - name: Setup GVM
+      command: gvm-setup
+      args:
+        creates: /var/lib/gvm/.notfirstrun
+
+    - name: Start GVM
+      command: gvm-start

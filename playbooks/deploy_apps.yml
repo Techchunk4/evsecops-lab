@@ -1,0 +1,13 @@
+---
+- name: Deploy WordPress to LAMP VM
+  hosts: lamp
+  become: true
+  roles:
+    - wordpress
+
+- name: Deploy Java App to Java VM
+  hosts: java
+  become: true
+  roles:
+    - java_app
+
