@@ -146,11 +146,5 @@ This project is licensed under the MIT License.
 
 ---
 
-Would you like me to:
 
-- Add GitHub Actions CI badge?
-- Auto-generate a diagram (e.g., network + app layout)?
-- Push it to a GitHub repo for you with `.gitignore`, `LICENSE`, etc.?
-
-Let’s take it to pro level!
 ```
